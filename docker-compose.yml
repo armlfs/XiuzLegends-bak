@@ -6,6 +6,10 @@ services:
       - .:/mnt
     links:
       - mysql
+    working_dir: /mnt
+    command: bash launcher.sh
+    ports:
+      - "8484:8484"
   mysql:
     image: "mariadb"
     volumes:
