@@ -1,5 +1,5 @@
 -- ------------------------------------------------------
--- XiuzSource: v62 By. XiuzSu
+-- XiuzLegends: v62 OP. XiuzSu
 -- ------------------------------------------------------
 --
 -- MySQL Administrator dump 1.4
@@ -19,11 +19,11 @@
 
 
 --
--- Create schema XiuzSource
+-- Create schema XiuzLegends
 --
 
-CREATE DATABASE IF NOT EXISTS XiuzSource;
-USE XiuzSource;
+CREATE DATABASE IF NOT EXISTS XiuzLegends;
+USE XiuzLegends;
 
 --
 -- Temporary table structure for view `readable_cheatlog`
