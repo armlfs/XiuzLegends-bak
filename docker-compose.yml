@@ -10,6 +10,7 @@ services:
     command: bash launcher.sh
     ports:
       - "8484:8484"
+      - "7575-7576:7575-7576"
   mysql:
     image: "mariadb"
     volumes:
