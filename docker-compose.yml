@@ -1,0 +1,14 @@
+version: '2'
+services:
+  world:
+    image: "openjdk:7"
+    volumes:
+      - .:/mnt
+    links:
+      - mysql
+  mysql:
+    image: "mariadb"
+    volumes:
+      - ./mysql:/var/lib/mysql
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
