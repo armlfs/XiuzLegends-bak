@@ -36,11 +36,10 @@ public class CreateCharHandler extends AbstractMaplePacketHandler {
         newchar.setFace(face);
         newchar.setHair(hair + hairColor);
         newchar.setGender(gender);
-        newchar.setStr(4);
-        newchar.setDex(4);
-        newchar.setInt(4);
-        newchar.setLuk(4);
-        newchar.setRemainingAp(9);
+        newchar.setStr(str);
+        newchar.setDex(dex);
+        newchar.setInt(_int);
+        newchar.setLuk(luk);
         newchar.setName(name, false);
         newchar.setSkinColor(MapleSkinColor.getById(skinColor));
 
@@ -57,9 +56,6 @@ public class CreateCharHandler extends AbstractMaplePacketHandler {
         IItem eq_weapon = MapleItemInformationProvider.getInstance().getEquipById(weapon);
         eq_weapon.setPosition((byte) -11);
         equip.addFromDB(eq_weapon);
-        IItem pWeap = MapleItemInformationProvider.getInstance().getEquipById(1702132);
-        pWeap.setPosition((byte) -111);
-        equip.addFromDB(pWeap);
 
         boolean charok = true;
 
